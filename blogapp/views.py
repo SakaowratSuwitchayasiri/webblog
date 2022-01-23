@@ -6,4 +6,3 @@ from .models import Post
 def index(request):
     posts = Post.objects.all()
     return render(request, 'index.htm', {'test':posts})
-    #return HttpResponse("SAKAOWRAT SUWITCHAYASIRI")
